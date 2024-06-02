@@ -1,0 +1,18 @@
+llm_planner:
+  _target_: src.planners.instruct_driver.InstructDriver
+  _convert_: "all"
+
+
+  torch_module_wrapper:
+    _target_: src.models.llm_torch_module_wrapper.LLMTorchModuleWrapper
+    _convert_: "all"
+
+    feature_builder:
+      _target_: src.feature_builders.nuplan_feature_builder.NuplanFeatureBuilder
+      _convert_: "all"
+      radius: 100
+      history_horizon: 2
+      future_horizon: 8
+      sample_interval: 0.1
+      max_agents: 32
+

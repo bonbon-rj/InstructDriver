@@ -1,0 +1,10 @@
+# @package _global_
+job_name: llm
+py_func: cache
+objective_aggregate_mode: mean
+
+defaults:
+  - override /splitter: nuplan
+  - override /model: llm_torch_module_wrapper
+  - override /scenario_filter: training_scenarios_1M
+
