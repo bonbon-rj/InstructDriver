@@ -1,14 +1,36 @@
+# Instruct Large Language Models to Drive like Humans
+
+
+
 This is the official repository of **Instruct Large Language Models to Drive like Humans**.
 
+<video src="assets/visualization.mp4" controls="controls" width="1700" height="400"></video>
 
 
-## Dataset Setup
+
+## Overview
+
+<img src="assets/overview.jpg" style="zoom: 20%;" />
+
+Our approach transforms scenario data into textual descriptions and, by setting specific instructions, enables a fine-tuned LLM to generate InstructChain and trajectories that align with human driving behavior. The trajectory is subsequently applied in a simulated environment.
+
+
+
+## Results
+
+<img src="assets/results.png" style="zoom:70%;" />
+
+
+
+## Getting Started
+
+### Dataset Setup
 
 Follow the [official documentation](https://nuplan-devkit.readthedocs.io/en/latest/dataset_setup.html) to set up the nuPlan dataset.
 
 
 
-## Setup Environment
+### Setup Environment
 
 - Create an environment using Python 3.10
 
@@ -45,7 +67,7 @@ After setting up the environment, your directory structure should appear as foll
 
 
 
-## Feature cache
+### Feature cache
 
 This section preprocesses the dataset to enable faster subsequent data retrieval.
 
@@ -76,7 +98,7 @@ worker.threads_per_node=40
 
 
 
-## Get training data from cache
+### Get training data from cache
 
 This section of the code transforms cached data into a json file formatted for training LLM.
 
@@ -93,7 +115,7 @@ cache.cache_path=/path/to/cache_1M
 
 
 
-## Training
+### Training
 
 Following the steps outlined above, you will obtain the `train.json` file suitable for training LLM. 
 
@@ -101,7 +123,7 @@ For guidance on fine-tuning the model, please consult the [official documentatio
 
 
 
-## Evaluation
+### Evaluation
 
 After training, populate the following parameters in the `llm_patches/llm_singleton.py` file:
 
