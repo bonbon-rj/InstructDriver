@@ -4,7 +4,9 @@
 
 This is the official repository of **Instruct Large Language Models to Drive like Humans**.
 
-![Visualization](assets/visualization.gif)
+![Visualization](assets/visualization_straight.gif)
+
+![Visualization](assets/visualization_right.gif)
 
 
 
