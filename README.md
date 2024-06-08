@@ -147,3 +147,18 @@ simulation_type=open_loop_boxes # closed_loop_nonreactive_agents closed_loop_rea
 sh ./script/benchmarks_test14-hard.sh $simulation_type
 ```
 
+
+
+## Acknowledgement
+
+[nuplan-devkit](https://github.com/motional/nuplan-devkit)   [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)   [planTF](https://github.com/jchengai/planTF)
+
+
+
+## Citation
+
+```
+
+```
+
+**Note:** This code is only used for academic purposes, people cannot use this code for anything that might be considered commercial use.
