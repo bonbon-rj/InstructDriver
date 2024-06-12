@@ -2,7 +2,7 @@
 
 
 
-This is the official repository of **Instruct Large Language Models to Drive like Humans**.
+This is the official repository of [**Instruct Large Language Models to Drive like Humans**](http://arxiv.org/abs/2406.07296).
 
 ![Visualization](assets/visualization_straight.gif)
 
@@ -158,7 +158,14 @@ sh ./script/benchmarks_test14-hard.sh $simulation_type
 ## Citation
 
 ```
-
+@misc{zhang2024instruct,
+      title={Instruct Large Language Models to Drive like Humans}, 
+      author={Ruijun Zhang and Xianda Guo and Wenzhao Zheng and Chenming Zhang and Kurt Keutzer and Long Chen},
+      year={2024},
+      eprint={2406.07296},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO}
+}
 ```
 
 **Note:** This code is only used for academic purposes, people cannot use this code for anything that might be considered commercial use.
